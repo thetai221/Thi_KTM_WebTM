@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Quanlytintuc.NewFolder1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="menu">
+            <header><a>Trang Tin Tức Đời Sống</a></header>
+            <nav>
+                <ul><li><a id="A4" href="../Trangchu.aspx">Trang chủ</a></li>
+                    <li><a id="A1" href="~/Tintuc.aspx" runat="server">Tin tức</a></li>
+                    <li><a id="A2" href="~/Tacgia.aspx" runat="server">Tác giả</a></li>
+                    <li><a id="A3" href="~/Chude.aspx" runat="server">Chủ đề</a></li>
+                </ul>
+            </nav>
+        </div>
+            <section class="auto-style1">
+                <asp:ContentPlaceHolder ID="cpMainContent" runat="server"></asp:ContentPlaceHolder>
+            </section>
+        <footer>Được tạo bởi Tai</footer>
+    </form>
+</body>
+</html>
